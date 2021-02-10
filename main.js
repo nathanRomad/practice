@@ -96,7 +96,14 @@ console.log(Object.entries(tenAlbum))
 
 // TODO: iterate the tenAlbum object and log the key/value pairs to the console using each of the above Object methods:
 // .keys()
+for (let key of Object.keys(tenAlbum)) {
+    console.log(key, tenAlbum[key])
+}
 // .values()
+for (let value of Object.values(tenAlbum)) {
+    const key = Object.keys(tenAlbum).find(key => tenAlbum[key] === value)
+    console.log(key, value);
+}
 // .entries()
 
 // ! ADD AND COMMIT
