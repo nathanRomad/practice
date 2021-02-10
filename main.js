@@ -56,7 +56,6 @@ const tenAlbum = {
 };
 
 // Dot vs. Bracket Notation - accessing properties
-
 // TODO: USING DOT NOTATION, access the object properties (artist, title, released) and log the following message to the console using string interpolation: "Pearl Jam's Album Ten was released on 8/27/1991"
 console.log("Artist:", tenAlbum.artist, "Title:", tenAlbum.title, "Release Date", tenAlbum.released)
 
@@ -64,7 +63,6 @@ console.log("Artist:", tenAlbum.artist, "Title:", tenAlbum.title, "Release Date"
 console.log(tenAlbum["artist"], "'s", tenAlbum["title"], "was released on", tenAlbum["released"])
 
 // Iterating Object keys/values
-
 // TODO: Iterate the tenAlbum object and log the key/value pairs to the console using a for/in loop
 // example: "title": "Ten"
 for (const item in tenAlbum) {
@@ -81,15 +79,20 @@ for (const item in tenAlbum) {
 for (const object of tenAlbum.tracks) {
     console.log(`Title: ${object.title} - Length: ${object.length}`)
 }
-
 // ! ADD AND COMMIT
 
 // OBJECT.keys() / .values() / .entries()
 // TODO: log the keys of the tenAlbum object using Object.keys()
+// Object.keys() = Returns an array containing the names of all of the given object's own enumerable string properties.
+console.log(Object.keys(tenAlbum))
 
 // TODO: log the values of the tenAlbum object Object.values()
+// Object.values() = Returns an array containing the values that correspond to all of a given object's own enumerable string properties.
+console.log(Object.values(tenAlbum))
 
 // TODO: log the entries of the tenAlbum object Object.entries()
+// Object.entries() = Returns an array containing all of the [key, value] pairs of a given object's own enumerable string properties.
+console.log(Object.entries(tenAlbum))
 
 // TODO: iterate the tenAlbum object and log the key/value pairs to the console using each of the above Object methods:
 // .keys()
